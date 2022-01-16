@@ -61,6 +61,7 @@ class MycobotInterface(object):
 
             # get real joint from MyCobot
             self.real_angles = self.mc.get_angles()
+            print("get angles: {}".format(self.real_angles))
             if self.real_angles:
                 rospy.logdebug_throttle(1.0, "get real angles from mycobot")
 

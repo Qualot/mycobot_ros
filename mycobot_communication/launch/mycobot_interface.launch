@@ -13,6 +13,6 @@
 
   <!-- robot state publisher for tf -->
   <param name="robot_description" command="$(find xacro)/xacro '$(arg urdf_path)'" />
-  <node name="$(anon robot_state_publisher)" pkg="robot_state_publisher" type="state_publisher" />
+  <node name="$(anon robot_state_publisher)" pkg="robot_state_publisher" type="robot_state_publisher" />
 
 </launch>
